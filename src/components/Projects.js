@@ -5,6 +5,7 @@ import capstoneImage from '../assets/images/Capstone.PNG';
 import golfAppImage from '../assets/images/Golf-app.jpg';
 import todoAppImage from '../assets/images/todo-app.PNG';
 import BalanceTracker from '../assets/images/Balance-tracker.jpg';
+import ryparis from '../assets/images/ryparis.jpg';
 
 export default function Projects() {
     return (
@@ -116,6 +117,32 @@ export default function Projects() {
                             </h3>
                             <p className="text-base md:text-lg text-gray-600">
                                 A web app for tracking your expenses and income.
+                            </p>
+                        </a>
+
+                        <a 
+                            href="https://kobeanderson51.github.io/RY-Paris/" 
+                            className="bg-white p-6 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 group" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            <div className="relative">
+                                <img 
+                                    src={ryparis} 
+                                    alt="RY Paris" 
+                                    className="w-full h-64 object-cover rounded-t-lg transition-transform duration-150"
+                                />
+                                <div className="absolute inset-0 flex items-center justify-center bg-gray-900 bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-150 rounded-t-lg">
+                                    <p className="text-white text-lg font-semibold text-center px-4">
+                                        Created with Plain HTML, CSS, and JavaScript.
+                                    </p>
+                                </div>
+                            </div>
+                            <h3 className="text-xl md:text-2xl font-semibold mt-4 mb-2 text-gray-900 group-hover:text-blue-600 transition-colors duration-150">
+                                RY Paris
+                            </h3>
+                            <p className="text-base md:text-lg text-gray-600">
+                                A web page for a fictional food webpage.
                             </p>
                         </a>
                     </div>
