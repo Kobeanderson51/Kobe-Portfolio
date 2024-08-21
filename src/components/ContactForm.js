@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 
-const ContactForm: React.FC = () => {
+const ContactForm = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
-    const [stateMessage, setStateMessage] = useState<string | null>(null);
+    const [stateMessage, setStateMessage] = useState(null);
 
-    const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    const sendEmail = (e) => {
         e.preventDefault();
         setIsSubmitting(true);
 

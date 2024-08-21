@@ -5,7 +5,7 @@ import Hero from './components/Hero';
 import Skills from './components/Skills';
 import BackToTopButton from './components/BackToTopButton.js';
 import About from './components/About.js';
-import ContactForm from './components/ContactForm.tsx';
+import ContactForm from './components/ContactForm.js';
 
 function App() {
   return (
