@@ -5,7 +5,7 @@ import Hero from './components/Hero';
 import Skills from './components/Skills';
 import BackToTopButton from './components/BackToTopButton.js';
 import About from './components/About.js';
-import Contact from './components/Contact.js';
+import ContactForm from './components/ContactForm.tsx';
 
 function App() {
   return (
@@ -14,9 +14,9 @@ function App() {
       <Hero />
       <Projects />
       <Skills />
-      <BackToTopButton />
       <About />
-      <Contact />
+      <ContactForm />
+      <BackToTopButton />
     </>
   );
 }

@@ -6,7 +6,7 @@ export default function Hero() {
     return (
         <div>
             <section 
-                className="text-white text-center py-40 bg-cover bg-center" 
+                className="text-white text-center py-40 bg-cover " 
                 style={{ backgroundImage: `url(${bgImage})` }}
             >
                 <div className="container mx-auto px-4">

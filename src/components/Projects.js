@@ -4,6 +4,7 @@ import React from 'react';
 import capstoneImage from '../assets/images/Capstone.PNG';
 import golfAppImage from '../assets/images/Golf-app.jpg';
 import todoAppImage from '../assets/images/todo-app.PNG';
+import BalanceTracker from '../assets/images/Balance-tracker.jpg';
 
 export default function Projects() {
     return (
@@ -89,6 +90,32 @@ export default function Projects() {
                             </h3>
                             <p className="text-base md:text-lg text-gray-600">
                                 A task management app with features for creating, updating, and deleting tasks.
+                            </p>
+                        </a>
+
+                        <a 
+                            href="https://react-project-one-indol.vercel.app/" 
+                            className="bg-white p-6 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 group" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            <div className="relative">
+                                <img 
+                                    src={BalanceTracker} 
+                                    alt="Balance Tracker" 
+                                    className="w-full h-64 object-cover rounded-t-lg transition-transform duration-150"
+                                />
+                                <div className="absolute inset-0 flex items-center justify-center bg-gray-900 bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-150 rounded-t-lg">
+                                    <p className="text-white text-lg font-semibold text-center px-4">
+                                        Created with React.js to manage your expenses.
+                                    </p>
+                                </div>
+                            </div>
+                            <h3 className="text-xl md:text-2xl font-semibold mt-4 mb-2 text-gray-900 group-hover:text-blue-600 transition-colors duration-150">
+                                Balance Tracker
+                            </h3>
+                            <p className="text-base md:text-lg text-gray-600">
+                                A web app for tracking your expenses and income.
                             </p>
                         </a>
                     </div>

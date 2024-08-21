@@ -8,15 +8,15 @@ export default function Nav() {
     };
 
     return (
-        <nav className="bg-gray-900 text-white shadow-lg">
+        <nav className="bg-blue-600 text-white shadow-lg">
             <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-                <a href="#" className="text-3xl font-bold hover:text-gray-400 transition-colors duration-300">
+                <a href="#" className="text-3xl font-bold hover:text-gray-300 transition-colors duration-300">
                     Kobe Anderson
                 </a>
                 <div className="block lg:hidden">
                     <button
                         onClick={toggleMenu}
-                        className="text-white focus:outline-none"
+                        className="text-white focus:outline-none transition-transform duration-300 hover:scale-110"
                     >
                         <svg
                             className="w-6 h-6"
@@ -35,12 +35,12 @@ export default function Nav() {
                     </button>
                 </div>
                 <div
-                    className={`fixed inset-0 z-50 bg-gray-900 bg-opacity-80 transition-transform transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} lg:hidden`}
+                    className={`fixed inset-0 z-50 bg-blue-600 bg-opacity-80 transition-transform transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} lg:hidden`}
                 >
                     <div className="flex flex-col items-center justify-between h-full">
                         <button
                             onClick={() => setIsMenuOpen(false)}
-                            className="absolute top-4 right-4 text-white text-3xl focus:outline-none"
+                            className="absolute top-4 right-4 text-white text-3xl focus:outline-none transition-transform duration-300 hover:scale-110"
                         >
                             &times;
                         </button>
@@ -49,7 +49,7 @@ export default function Nav() {
                                 <li>
                                     <a
                                         href="#projects"
-                                        className="text-2xl text-white hover:text-blue-400 transition-colors duration-300"
+                                        className="text-2xl text-white hover:text-blue-300 transition-colors duration-300"
                                         onClick={() => setIsMenuOpen(false)}
                                     >
                                         Projects
@@ -58,7 +58,7 @@ export default function Nav() {
                                 <li>
                                     <a
                                         href="#skills"
-                                        className="text-2xl text-white hover:text-blue-400 transition-colors duration-300"
+                                        className="text-2xl text-white hover:text-blue-300 transition-colors duration-300"
                                         onClick={() => setIsMenuOpen(false)}
                                     >
                                         Skills
@@ -67,7 +67,7 @@ export default function Nav() {
                                 <li>
                                     <a
                                         href="#contact"
-                                        className="text-2xl text-white hover:text-blue-400 transition-colors duration-300"
+                                        className="text-2xl text-white hover:text-blue-300 transition-colors duration-300"
                                         onClick={() => setIsMenuOpen(false)}
                                     >
                                         Contact
@@ -81,7 +81,7 @@ export default function Nav() {
                     <li>
                         <a
                             href="#projects"
-                            className="text-lg hover:bg-gray-700 hover:text-blue-400 transition-colors duration-300"
+                            className="text-lg hover:bg-gray-700 hover:text-blue-300 transition-colors duration-300 px-3 py-2 rounded-lg hover:shadow-lg"
                         >
                             Projects
                         </a>
@@ -89,7 +89,7 @@ export default function Nav() {
                     <li>
                         <a
                             href="#skills"
-                            className="text-lg hover:bg-gray-700 hover:text-blue-400 transition-colors duration-300"
+                            className="text-lg hover:bg-gray-700 hover:text-blue-300 transition-colors duration-300 px-3 py-2 rounded-lg hover:shadow-lg"
                         >
                             Skills
                         </a>
@@ -97,7 +97,7 @@ export default function Nav() {
                     <li>
                         <a
                             href="#contact"
-                            className="text-lg hover:bg-gray-700 hover:text-blue-400 transition-colors duration-300"
+                            className="text-lg hover:bg-gray-700 hover:text-blue-300 transition-colors duration-300 px-3 py-2 rounded-lg hover:shadow-lg"
                         >
                             Contact
                         </a>
